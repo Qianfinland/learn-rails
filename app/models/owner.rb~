@@ -9,7 +9,6 @@ class Owner
   end
 
   def countdown
-    Rails.logger.debug 'DEBUG: entering Owner countdown method '
     today = Date.today #for current date from computer system's lock 
     birthday = Date.new(today.year, birthdate.month, birthdate.day)
     if birthday > today# Foobar's birthday is in the future
